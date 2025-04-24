@@ -1,13 +1,6 @@
 import { Request, Response } from 'express';
 import { Thought, User } from '../models/index.js';
 
-// export const reactionCount = async () => {
-//   const numberOfReactions = await Thought.reactions.aggregate()
-//       .count('reactionCount');
-//   return numberOfReactions;
-// }
-
-
 export const getAllThoughts = async (_req: Request, res: Response) => {
     try {
         const thoughts = await Thought.find();

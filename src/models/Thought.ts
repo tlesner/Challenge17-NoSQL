@@ -44,7 +44,6 @@ const thoughtSchema = new Schema<Ithought>(
         createdAt: {
             type: Date,
             default: Date.now,
-            //get: (timestamp: number) => new Date(timestamp).toLocaleString(),
         },
         username: {
             type: String,
